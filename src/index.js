@@ -16,6 +16,12 @@ app.use(
 );
 
 // Route
+app.get("/",(req,res)=>{
+    console.log("Hello")
+    return res.json({
+        success :true
+    })
+})
 app.use("/api/products", productsRoute);
 
 // Start server

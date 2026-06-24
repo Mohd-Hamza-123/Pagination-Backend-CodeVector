@@ -12,7 +12,7 @@ export const pool = new Pool({
 async function seed() {
     try {
         await pool.query(`
-INSERT INTO products (
+INSERT INTO product (
   name,
   price,
   category
